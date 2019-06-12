@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login or Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/ls_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="js/signup_form.js"></script>
+    
+</head>
+<body>
+    <div class="Container login-div">
+        <div class="Header"><center><h1>TutorClub</h1></center></div>
+        
+        <button id="to-home">To home</button>
+        
+        <form action="" method="post">
+            <label for="username">Username</label><br><input type="text" name="username" id=""><br>
+            <label for="password">Password</label><br><input type="password" name="password" id=""><br>
+            <a href="">Forgot Password?</a>
+            <button type="submit">Login</button>
+        </form>
+        <div class="footer">
+            <p>KevDesigns&copy;</p>
+        </div>
+    </div>
+    <div class="Container signup-div">
+        <div class="Header"><center><h1>TutorClub</h1></center></div>
+        
+        <button id="to-home">To home</button>
+        
+        <div class="sign-up-header"><h2>Sign up now and be a tutor.</h2></div>
+        
+        <form id="signup-form" action="" method="post">
+            <div class="bound">
+                <input type="text" name="nameS" id="namejs" placeholder=" Name" ><br>
+                <input type="text" name="usernameS" id="usernamejs" placeholder=" Username"><br>
+                <input type="password" name="passwordS" id="passwordjs" placeholder="Password"><br>
+                <input type="email" name="emailS" id="emailjs" placeholder="Email"><br>
+                <label for="pic">Select Profile Pic</label>
+                <input type="file" name="propic" id="pic">
+                <p id="path_sgn"></p>
+                <label>Regular User</label><input type="radio" name="type" value="reg" id="typejs">
+                <label>Tutor</label><input type="radio" name="type" value="tut" id="">
+                <hr>
+                <label>Male</label><input type="radio" name="sex" value="male" id="">
+                <label>Female</label><input type="radio" name="sex" value="female" id="">
+                <hr>    
+                <br><label for="">Eduaction Level</label>
+                    <select name="Edulvl" id="Edulvljs">
+                        <option value="Bch">Bacheleor Degree</option>
+                        <option value="Mst">Master's Degree</option>
+                        <option value="Clg">College Student</option>
+                        <option value="Exp">Experiance</option>
+                    </select><br>
+                <input type="text" name="subj" id="subjjs" placeholder="Subject"><br>
+                <input type="number" name="ph" id="phjs" placeholder="Br./Hour"><br>
+                <input type="text" name="telg" id="telgjs" placeholder="Telegram username eg.@Example"><br>
+                <textarea name="abt" id="abtjs" cols="30" rows="10" placeholder="About you"></textarea><br>
+
+                <button id="submit-button" type="submit">Sign up</button>
+            </div>    
+        </form>
+        <div class="footer">
+            <p>KevDesigns&copy;</p>
+        </div>
+    </div>
+    
+    
+</body>
+<script>
+setInterval(function pather(obj){
+    if($("#pic").val() != ""){
+        var ext = $("#pic").val().split('.').pop();
+        if(ext === 'png'||ext === 'jpg'||ext === 'jpeg')
+            $("#path_sgn").text($("#pic").val());
+        else
+            $("#path_sgn").text("Please enter an image.");    
+    }
+},1000); 
+</script>
+</html>

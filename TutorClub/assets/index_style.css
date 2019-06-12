@@ -1,0 +1,660 @@
+/* Set Up */
+*{
+    transition: all 200ms ease-in-out;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    
+}
+section{
+    text-align: center;
+}
+body{
+    background: url("pexels-photo-264635.jpeg");
+    background-size: cover;
+    overflow: hidden;
+   
+}
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.Phone{
+    display: none;
+}
+.Pc{
+    display: block;
+}
+/* Set Up End*/
+
+nav{
+    background-color: darkcyan;
+    color: black;
+    box-shadow: 0px 1px 3px black;
+}
+nav t{
+    font-size: 2.5em;
+}
+.searchicon{
+    float: left;
+    font-size: 2em;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    visibility: hidden;
+}
+.usericon{
+    float: left;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2.5em;
+    display: none !important;
+}
+.header-text{
+    float: left;
+    margin-left: 40%;
+    margin-top: 1em;
+}
+nav p{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+.btn-col{
+    text-align: center;
+    float: left;
+    margin-left: 32%;
+    margin-top: 1.5em;
+}
+.btn-col button{
+    margin: auto;
+    border: 1px solid #003838;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    
+}
+.btn-col button:hover{
+    background-color:#003838;
+    
+}
+.btn-col-out{
+    display: none;
+}
+.side-search{
+    float: left;
+    background-color: darkcyan;
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    opacity: 0.9;
+    transform: translateX(0em);
+}
+.side-search input,.side-search select{
+    margin-bottom: 3rem;
+    border: 0;
+    border-radius: 2px;
+}
+.side-search [type="radio"]{
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+.side-search label{
+    color: white;
+    font-weight: 100;
+}
+.side-search button{
+    margin: auto;
+    border: 1px solid #003838;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+}
+.side-search button:hover{
+    background-color:#003838;
+}
+.list-container h2{
+    color: white;
+}
+.list-container{
+    max-width: 50%;
+    margin-left: 16%;
+    margin-top: 1em;
+}
+.panel-heading {
+    border-bottom: 0;
+    background-color: darkcyan !important;
+    color: white !important;
+}
+.panel-title img{
+    height: 5rem;
+}
+.panel-body{
+    max-height: 15em;
+    background-color: darkcyan;
+    border-top: 1px solid white;
+}
+.panel-body img{
+    height: 13em;
+    float: left;
+}
+.panel-body p{
+    border: 1px solid white;
+    max-width: 71%;
+    margin-left: 15em;
+    padding: 1rem;
+    border-radius: 2px;
+    color: white;
+}
+.panel-body button{
+    margin: auto;
+    border: 1px solid #003838;
+    background-color: transparent;
+    color: white;
+    padding: 1rem;
+    float: left;
+    margin-left: 2em;
+}
+.panel-body button:hover{
+    background-color:#003838;
+}
+.info-cont{
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    display: none;
+    animation: IC 200ms ease;
+}
+.info-cont input{
+    padding-top: 0.4rem;
+}
+.info-cont button{
+    float: none;
+    margin-left: 0em;
+    padding: 0.4rem;
+}
+@keyframes IC{
+    0%{
+        margin-left: -11rem;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 1rem;
+        opacity: 1;
+    }
+}
+.rating{
+    float: right;
+    font-size: 2rem;
+    padding: 0.3rem;
+    margin-right: 1em;
+    border: 1px solid;
+    padding-right: 0;
+}
+.rating span{
+    padding: 0.5rem;
+}
+.rating span:hover{
+    color: white;
+    background-color: #003838;
+}
+
+.pics{
+    float: left;
+}
+.div{
+    float: left;
+    height: 5rem;
+    width: 1px;
+    margin-left: 1rem;
+    background-color: white;
+    box-shadow: 0.5px -0.5px 0.2px black;
+}
+.art{
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1.5rem;
+    text-shadow:  0.5px -0.5px 0.2px black;
+}
+.art span{
+    color: gold;
+    z-index: 0;
+}
+.OP{
+    display: none;
+
+}
+
+/*---------------Side Profile Edit----------*/
+.pro-settings{
+    position: absolute;
+    top: 7em;
+    left: 85%;
+    transform: translate(21em);
+}
+.pro-settings .glyphicon-remove{
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    left: 5%;
+}
+.pro-settings .bound{
+    margin-top: 3.5rem;
+}
+.pro-settings form{
+    margin: auto;
+    background-color: darkcyan;
+    padding: 1rem;
+    max-width: 98%;
+    border-radius: 4px;
+    outline-color: black;
+    outline-width: 2px;
+    outline-style: auto;
+    text-align: center;
+}
+.pro-settings form label{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 200;
+    text-shadow: none;
+}
+.pro-settings form input{
+    margin: auto;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 90%;
+    margin-bottom: 1rem;
+    padding-left: 4px;
+    box-shadow: none;
+    transition: all 500ms ease;
+    
+}
+.pro-settings form a{
+    display: block;
+    color: white;
+    padding: 1rem;
+    width: 39%;
+    margin-left: 11rem;
+}
+.pro-settings form button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+}
+.pro-settings form button:hover{
+    background-color: #003838;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.pro-settings form button:focus{
+    background-color: #003838;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.pro-settings textarea{
+    width: 90%;
+    border-radius: 2px;
+}
+/*--------------Side Profile Edit end-------*/
+
+
+
+/*------Pro-pic--------*/
+.pro-pic{
+    float: right;
+}
+.pro-pic img{
+    height: 50px;
+    margin: 1rem;
+}
+input[type = "file"]{
+    display: none !important;
+}
+
+/*------Pro-pic End--------*/
+
+/*------Offers--------*/
+.offers-box{
+    width: fit-content;
+    float: right;
+    background-color: darkcyan;
+    margin-right: 18em;
+    margin-bottom: 1em;
+    margin-top: -29em;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 2px;
+    outline: 2px solid;
+    outline-offset: -15px;
+}
+.offers-box hr{
+    margin-bottom: 0;
+}
+.offers-box a{
+    text-decoration: none;
+    text-emphasis: none;
+    color: inherit;
+}
+.offers-box a:hover,.offers-box a:focus{
+    color: inherit;
+    text-decoration: none;
+}
+.offers-list:hover,.offers-list:focus{
+    background-color: #003838;
+    color: white;
+}
+.offers-list{
+    padding: 1rem;
+    border-bottom: 1px solid;
+}
+.btn-offers{
+    display: none;
+}
+
+/*------Offers end--------*/
+
+footer{
+    background-color: darkcyan;
+}
+.About{
+    float: left;
+    max-width: 50%;
+    padding: 1em;
+}
+.Contact,.Links{
+    float: left;
+    margin-right: 10em;
+    margin-left: 5em;
+    padding: 1em;
+}
+footer li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.Links h2{
+    text-align: right;
+}
+.Contact h2{
+    text-align: center;
+}
+.Contact ul{
+    text-align: left;
+}
+
+.Contact span{
+    margin-right: 0.5rem;
+}
+.Rights{
+    padding: 3.4rem;
+}
+.Rights p{
+    width: fit-content;
+    margin-left: 55em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+    .Phone{
+        display: block;
+    }
+    .Pc{
+        display: none;
+    }
+    body{
+        background-size: 300%;
+        background-position-x: -10em;
+        background-attachment: fixed;
+        overflow: auto;
+    }
+    .btn-col{
+        display: none;
+    }
+    .btn-col-out{
+        display: none;
+        margin: auto;
+    }
+    .btn-col-out button{
+        margin: 1rem;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        color: white;
+        border-radius: 2px;
+
+    }
+    .header-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        float: none;
+        max-width: 50%;
+        margin-top: 1rem;
+       
+    }
+    .searchicon{
+        visibility: visible;
+        z-index: 2;
+    }
+    .usericon{
+        float: right;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 2em;
+        z-index: 2;
+        
+    }
+    .side-search{
+        opacity: 1;
+        z-index: 2;
+        position: absolute;
+        top: 4em;
+        left: -1em;
+        padding-bottom: 2.1em;
+        border: 1px solid;
+        border-left: 1px solid darkcyan;
+        animation: show 200ms ease-in-out;
+        transform: translateX(-16em);
+        
+    }
+    .visibleS{}
+    
+    .hiddenS{}
+    .glyphicon-remove{
+        animation: GR 200ms ease;
+    }
+    @keyframes GR {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .glyphicon-search{
+        animation: GS 200ms ease;
+    }
+    @keyframes GS {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .list-container{
+        position: absolute;
+        max-width: 98%;
+        margin-left: 1%;
+        display: contents;
+    }
+    .art{
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+    .E,.S,.d3,.d2{
+        display: none;
+    }
+    .div{
+        margin-left: 0.8rem;
+    }
+    .panel-body{
+        max-height: none;
+        text-align: center;
+    }
+    .panel-body img{
+        float: none;
+        height: 23em;;
+    }
+    .panel-body p{
+        max-width: 100%;
+        margin-left: 0em;
+        margin-top: 5rem;
+    }
+    .panel-body button{
+        margin-left: 0;
+        margin: auto;
+        float: none;
+        border-radius: 3px;
+    }
+    .OP{
+        display: block;
+        margin-right: 3em;
+    }
+    .info-cont{
+        margin: auto;
+        margin-left: 0rem;
+        float: none;
+        display: none;
+        margin-top: 1rem;
+        animation: ICP 200ms ease;
+    }
+    @keyframes ICP {
+        0%{
+            margin-top: -3rem;
+            opacity: 0;
+        }
+        100%{
+            margin-top: 1rem;
+            opacity: 1;
+        }
+    }
+    .rating{
+        margin: auto;
+        margin-top: 1rem;
+        float: none;
+        max-width: 74%;
+    }
+    /*---------Offers------------*/
+    .offers-box{
+        margin-top: 1em;
+    }
+    .btn-offers{
+        display: block;
+    }
+    .btn-offers button{
+        margin: auto;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .btn-offers button:focus{
+        background-color: #003838;
+        outline: none;
+    }
+    /*--------Offers End---------*/
+
+  
+    
+    /*-------Profile Edit--------*/
+    .pro-settings{
+        display: none;
+        transform: translateX(-12em);
+        top: 5em;
+        width: 62%;
+    }
+
+    /*-------Profile Edit End--------*/
+
+
+    footer{
+        margin-top: 10em;
+    }
+    .About{
+        max-width: 98%;
+    }
+    .Contact,.Links{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem;
+    }
+    .Links{
+        max-width: 50%;
+    }
+    .Contact{
+        max-width: 60%;
+    }
+    .Rights{
+        overflow: auto;
+        text-align: center;
+    }
+    .Rights p{
+        width: fit-content;
+        margin: auto;
+        
+    }
+    .overlay{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1.5;
+        cursor: pointer;
+    }    
+}
+
+@media (max-width:350px){
+    .Contact,.Links{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

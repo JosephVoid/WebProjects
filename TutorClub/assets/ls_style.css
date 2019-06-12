@@ -1,0 +1,270 @@
+*{
+    transition: all 200ms ease-in-out;
+}
+html,body{
+    overflow: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("adapting-book-1024x682.jpg") no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+}
+.Container{
+    margin-left: 30em;
+    margin-right: 30em;
+    text-align: center;
+}
+.Header h1{
+    font-size: 7rem;
+    color: white;
+    padding: 2rem;
+}
+#to-home{
+    margin: auto;
+    border: 1px solid white;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+}
+#to-home:hover{
+    background-color: darkcyan;
+    padding: 1.2em;
+}
+form{
+    margin: auto;
+    background-color: darkcyan;
+    padding: 2rem;
+    max-width: 50%;
+    border-radius: 4px;
+    outline-color: black;
+    outline-width: 2px;
+    outline-style: auto;
+}
+form label{
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-weight: 200;
+    text-shadow: 0px 0px 0.1px black;
+}
+form input{
+    border-radius: 3px;
+    border: 1px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 60%;
+    padding-left: 4px;
+    box-shadow: 0px 0px 6px 0px black;
+    transition: all 500ms ease;
+}
+form input:focus{
+    width: 80%;
+    border: 3px solid black;
+}
+form a{
+    margin: auto;
+    display: block;
+    color: white;
+    padding: 1rem;
+    width: 39%;
+   
+}
+form button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+}
+form button:hover{
+    background-color: #003838;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/*signup*/
+.signup-div{
+    text-align: center;
+}
+.sign-up-header{
+    color: white;
+}
+.signup-div #to-home{
+    margin: auto;
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+}
+.signup-div #to-home:hover{
+    background-color: darkcyan;
+    padding: 0.9em;
+}
+.signup-div #to-home:focus{
+    background-color: darkcyan;
+    padding: 0.9em;
+}
+.signup-div form{
+    margin: auto;
+    background-color: darkcyan;
+    padding: 2rem;
+    max-width: 50%;
+    border-radius: 4px;
+    outline-color: black;
+    outline-width: 2px;
+    outline-style: auto;
+    text-align: center;
+}
+.signup-div form label{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 200;
+    text-shadow: none;
+}
+.signup-div .bound{
+    outline: 1px solid #025a5a;
+    outline-offset: 12px;
+    border-radius: 2px;
+}
+.signup-div form input{
+    margin: auto;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 80%;
+    margin-bottom: 1rem;
+    padding-left: 4px;
+    box-shadow: none;
+    transition: all 500ms ease;
+    
+}
+.signup-div input:focus{
+    width: 90%;
+    outline: none;
+    border: 1px solid #003838;
+}
+.signup-div [type="radio"]{
+    width: auto;
+}
+.signup-div [type="radio"]:focus{
+    width: auto;
+    border: 0;
+}
+.signup-div [type="file"]{
+    display: none !important;
+}
+.signup-div label[for="pic"]{
+
+}
+.signup-div label[for="pic"]:hover,.signup-div label[for="pic"]:focus{
+    color: white;
+    outline: 2px solid white;
+    background-color: #003838;
+    outline-offset: -6px;
+}
+.signup-div form a{
+    display: block;
+    color: white;
+    padding: 1rem;
+    width: 39%;
+    margin-left: 11rem;
+}
+.signup-div form button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+}
+.signup-div form button:hover{
+    background-color: #003838;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.signup-div form button:focus{
+    background-color: #003838;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.signup-div hr{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.signup-div textarea{
+    width: 80%;
+    border-radius: 2px;
+}
+.signup-div textarea:focus{
+    width: 90%;
+}
+.signup-div{
+   
+}
+.login-div{
+    display: none;
+}
+.footer{
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+.footer p{
+    margin: auto;
+    padding: 0.5rem;
+    color: black;
+    background-color: #f7f2e3;
+    width: fit-content;
+
+}
+
+
+
+
+
+
+
+@media (max-width:767px){
+body{
+    background-size: 300%;
+    background-position: top;
+    background-attachment: fixed;
+}
+.Container{
+    margin-left: 0;
+    margin-right: 0;
+}
+.Header h1{
+    font-size: 5rem;
+}
+form{
+    max-width: 90%;
+}
+form input{
+    max-width: 80%;
+}
+form input:focus{
+    width: 90%;
+    outline: none;
+}
+form a{
+    width: 50%;
+}
+.signup-div form{
+    max-width: 90%;
+}
+.footer{
+    margin-top: 18.8rem;
+    text-align: center;
+    width: 100%;
+}
+.footer p{
+    margin: auto;
+    padding: 0.5rem;
+    color: black;
+    background-color: #f7f2e3;
+}
+
+}
