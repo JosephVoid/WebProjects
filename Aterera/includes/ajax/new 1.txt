@@ -1,0 +1,19 @@
+$.ajax({
+    url: "uploader.php",
+    type: "POST",
+    data: Form,
+    dataType: "json", // <-- Add this param
+    processData: false,
+    contentType: false,
+    success: function (data) {
+        alert(data[0]);
+    }
+});
+
+and On php's end, you can use json_encode() to convert the array to a json string.
+
+$output = [];
+$output[] = "stuff1";
+//some other code.
+$output[] = "stuff2";
+echo json_encode($output);

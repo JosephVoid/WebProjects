@@ -1,0 +1,524 @@
+
+.jumbotronpers {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+  margin-left:0px;
+  margin-right:10px;
+  color: inherit;
+  background-color: #ececec;
+  width:1170px;
+  border-radius:5px;
+  }
+table{
+	color:#2a2829;
+}  
+.persalign{
+	padding-top:0px;
+}
+#mymodal{
+	z-index:1500;
+	
+}
+#form-control-pers {
+  box-shadow: none;
+  background: transparent;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  height: 46px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#content{
+	margin-top:100px;
+}
+#profile{
+	margin-top:83px;
+	width:40%;
+	margin-left:300px;
+	height:20px;
+	padding-top:0px;
+	padding-bottom:60px;
+	
+	
+}
+#mtshit{
+	margin-top:15em;
+}
+#td1,#td2,#td4,#td3{
+	width:25%;
+	padding:0px;
+}
+.ProPic{
+	height:60px;
+	width:60px;
+	padding:5px;
+}
+#authorpic{
+	height:30px;
+	width:30px;
+}
+#pencil{
+	width:12px;
+	height:12px;
+	left:-5px;
+}
+#Tlike{
+	left:-10px;
+	
+}
+#uButton{
+	height:30px;
+	width:80px;
+	text-align:center;
+}
+#lButton{
+	height:30px;
+	width:80px;
+	text-align:center;
+}
+#Dbutton{
+	height:30px;
+	text-align:center;
+	vertical-align:center;
+	width:99%;
+}
+#tabcont{
+	
+	width:1198px;
+	
+}
+
+table{
+	width:100%;
+	text-align:center;
+	table-layout:fixed;
+	
+}
+th,td {
+	border-bottom:1px solid #ddd;
+}
+td{
+	width:14.2% ;
+}
+tr:nth-child(even){
+	background-color:#c7c7c7;
+}
+/*!tr{
+	height:40px;
+}*/
+#headerTab{
+	background-color:#e8373c;
+	color:white;
+	height:50px;
+}
+
+.ProEdit{
+	text-align:left;
+}
+#quotes{
+	position:absolute;
+	float:right;
+	left:600px;
+	width:500px;
+	height:700px;
+	font-family:Freestyle Script;
+	font-size:74px;
+	color:white;
+	
+}
+.tabovflow{
+	margin-left:-15px;
+	width:1200px;
+	height:815px;
+	
+}
+.pages{
+	position:relative;
+	margin-top:0px;
+	text-align:center;
+	height:40px;
+	
+}
+.mintabflow{
+	height: 775px;
+	overflow-y:auto;
+}
+#selectf{
+	position:absolute;
+	float:right;
+	right:160px;
+	top:5px;
+}
+.divi{
+	margin:10px;
+}
+#canv{
+	width:170px;
+	height:30px;
+	float:right;
+	margin-top:10px;
+	background-color:#eeeeee;
+	border:solid 2px;
+	border-radius:10px;
+	border-color:#f54c53;
+	display:none;
+}
+#message{
+	margin-top:5px;
+	text-align:center;
+}
+#search-but {
+    height: 30px;
+    width: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#search_drop{
+	width:250px;
+	height:100px;
+}
+#st{
+	position: relative;
+	bottom: 6px;
+	left:-11px;
+}
+.glyphicon-remove-circle{
+	font-size: 40px;
+	position: absolute;
+	z-index: 1;
+	left: 590px;
+	top: -30px;
+	color: red;
+	
+}
+#md_likes{
+	position: absolute;
+	left: 465px;
+	top: 545px;
+	font-weight: bold;
+	float: right;
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #f54c53;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+#ques{
+	margin-left: 5px;
+	color:#3f3636;
+}
+#ques:hover{
+	color:#7e7676;
+	
+}
+#gly-ser{
+	margin-left: -9px;
+	font-size: x-large;
+	margin-top:-28px;
+}
+#profmodal{
+	height:600px;
+	width:600px;
+}
+#scroll-but{
+	border-radius:0px;
+	height:38px;
+}
+htwo{
+	font-size:22px;
+}
+#img_cont{
+	height: 50px;
+	width: 50px;
+	margin-left:20px;
+}
+.left{
+	float:left;
+}
+.right{
+	
+	margin-left:10px;
+}
+#talkbubble {
+		width: 150px;
+		height: 75px;
+		background: #453d3d;
+		position: relative;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		margin-left: 100px;
+		display: none;
+		position:absolute;
+		top: 592px;
+		left: 53px;
+   }
+#talkbubble:before {
+		content: "";
+		position: absolute;
+		right: 95%;
+		top: 12px;
+		width: 0;
+		height: 0;
+		border-top: 8px solid transparent;
+		border-right: 21px solid #453d3d;
+		border-bottom: 8px solid transparent;
+		  
+}
+#talkbubble.clicked{
+		display:block;
+}
+#md_oth{
+	height:600px;
+	width:600px;
+	background-color: #ececec;
+}
+#oth_pic{
+	height:480px;
+	width:100%;
+}
+.phoneprofile{
+	display: none;
+}
+  
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+			text-align:left;
+			width:71.5%;
+		}
+		
+		
+		td:nth-of-type(1):before { content: "Note name ";color:#f54c53;margin-left:0px;}
+		td:nth-of-type(2):before { content: "Course name ";color:#f54c53;margin-left:0px; }
+		td:nth-of-type(3):before { content: "Author ";color:#f54c53;margin-left:0px; }
+		td:nth-of-type(4):before { content: "Likes ";color:#f54c53;margin-left:0px; }
+		td:nth-of-type(5):before { content: "Type ";color:#f54c53;margin-left:0px; }
+		td:nth-of-type(6):before { content: "Date ";color:#f54c53;margin-left:0px; }
+		td:nth-of-type(7):before { content: "Download ";color:#f54c53;margin-left:0px;}
+		td:nth-of-type(8):before { content: "Dream Vacation City";color:#f54c53;}
+		td:nth-of-type(9):before { content: "GPA"; }
+		td:nth-of-type(10):before { content: "Arbitrary Data"; }
+		
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		
+		#td1:nth-of-type(1):before{content:"";}
+		#td2:nth-of-type(2):before{content:"";}
+		#td3:nth-of-type(3):before{content:"";}
+		#td4:nth-of-type(4):before{content:"";}
+		
+		#td_desc:nth-of-type(5):before{content:"";}
+		#td1,#td2,#td3,#td4{
+			margin-left: 10px;
+			width: 251%;
+			text-align: center;
+			height:69px;
+		}
+		#profmodal{
+			height:320px;
+			width:320px;
+			margin-top:100px;
+			margin-left:-10px;
+		}
+		
+		.modal-body{
+			position:relative;
+			padding:0px;
+		}
+		.btn {
+			display: block;
+			width: 100%;
+		}
+		#scroll-but{
+			width:5%;
+		}
+		.pages{
+			text-align:center;
+			width:27%;
+		}
+		#Edit_button{
+			position: absolute;
+			left: 96px;
+			top: 352px;
+		}
+		#td3{
+			font-size:xx-large;
+		}
+		
+		#Tlike{
+			position: relative;
+			margin-top: 19px;
+		}
+		#uzname{
+			font-size:x-large;
+		}
+		
+		#profmodal{
+			height:320px;
+			width:320px;
+		}
+		
+		#md_oth{
+			height:320px;
+			width:300px;
+			background-color: #ececec;
+		}
+		#oth_pic{
+			width:200px;
+			height:200px;
+		}
+		.uptab{
+			margin-left:50px;
+		}
+		#upage{
+			margin-left:50px;
+		}
+		#ft{
+			background-color:white;
+		}
+		#profile{
+			display: none;
+		}
+		.phoneprofile{
+			display: block;
+		}
+		/*CSS for phones*/
+		.Phone-profile-container{
+			width: 96%;
+			height: 75px;
+			display: flex;
+			flex-direction: row;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-top: 30px;
+			
+		}
+		.child{
+			width: 25%;
+			height: 100%;
+			background-color: #ececec;
+			text-align: center;
+			/*vertical-align:middle;*/
+		}
+		.ppicture{
+			border-right: 2px;
+			border-right-color:rgb(48, 46, 46);
+			border-right-style: solid;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		.pusername{
+			border-right: 2px;
+			border-right-color:rgb(48, 46, 46);;
+			border-right-style: solid;
+
+		}
+		.plikes{
+			border-right: 2px;
+			border-right-color:rgb(48, 46, 46);;
+			border-right-style: solid;
+
+		}
+		.pedit{
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		htwo{
+			color: black;
+			position: relative;
+			top: 15px;
+			font-size: x-large;
+		}
+		.phlike{
+			font-size: x-large;
+			position: relative;
+			top: 16px;
+			font-weight: 600;
+			color: black;
+		}
+		.editkey{
+			position: relative;
+			top: 15px;
+			font-size: xx-large;
+		}
+		
+		#phone_img_cont{
+			height: 100%;
+		}
+		.ProEdit{
+			text-align: center;
+		}
+		.ProfEditButton{
+			 margin-left: 40%;
+		}
+		/*CSS for phones end*/
+		
+	}
